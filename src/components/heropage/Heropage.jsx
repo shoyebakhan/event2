@@ -105,13 +105,13 @@ function Heropage() {
     },
 ]
   return (
-    <div className="slider-container">
+    <div className="slider-container overflow-x-hidden">
       <Slider {...settings} className="">
                 {images.map((image) => 
                     <div className="relative">
                         <img src={image.download_url} alt={image.author} />
-                        <h1 className="text-9xl text-white absolute z-10 top-[300px] left-[500px] opacity-40">PARTY</h1>
-                        <Button color="primary" className="absolute top-[450px] left-[600px] bg-">GET STARTED <FaArrowRightLong /></Button>
+                        <h1 className="text-9xl text-white absolute z-10 top-[300px] left-[500px] opacity-50">PARTY</h1>
+                        <Button color="primary" className="absolute top-[450px] left-[600px] bg-emerald-900">GET STARTED <FaArrowRightLong /></Button>
                     </div>
                 )}
       </Slider>
