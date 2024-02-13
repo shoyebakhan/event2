@@ -16,7 +16,7 @@ function Heropage() {
     autoplay: true,
     speed: 1500,
     autoplaySpeed: 3000,
-    centerPadding: "100px",
+    centerPadding: "210px",
     cssEase: "linear",
     responsive: [
         {
@@ -41,77 +41,73 @@ function Heropage() {
             slidesToShow: 1,
             slidesToScroll: 1,
             centerPadding: "100px",
-
           }
         }
       ]
     };
   const images = [
     {
-      "id": "0",
       "author": "Alejandro Escamilla",
-      "width": 5000,
-      "height": 3333,
-      "url": "https://unsplash.com/photos/yC-Yzbqy7PY",
-      "download_url": "https://picsum.photos/id/0/5000/3333"
+      "download_url": "https://i.postimg.cc/4429cf6h/flower-1.jpg",
+      "heading": 'party',
+      "sub_heading": 'click, get started',
+      "disc": 'hello this is party time',
     },
     {
-      "id": "1",
       "author": "Alejandro Escamilla",
-      "width": 5000,
-      "height": 3333,
-      "url": "https://unsplash.com/photos/LNRyGwIJr5c",
-      "download_url": "https://picsum.photos/id/1/5000/3333"
+      "download_url": "https://i.postimg.cc/C1B9hLSp/pexels-best-wedding-photographers-india-4552397.jpg",
+      "heading": 'party',
+      "sub_heading": 'click, get started',
+      "disc": 'hello this is party time',
     },
     {
-      "id": "2",
       "author": "Alejandro Escamilla",
-      "width": 5000,
-      "height": 3333,
-      "url": "https://unsplash.com/photos/N7XodRrbzS0",
-      "download_url": "https://picsum.photos/id/2/5000/3333"
+      "download_url": "https://i.postimg.cc/T11tTTmv/pexels-asad-photo-maldives-169190.jpg",
+      "heading": 'party',
+      "sub_heading": 'click, get started',
+      "disc": 'hello this is party time',
     },
     {
-      "id": "3",
       "author": "Alejandro Escamilla",
-      "width": 5000,
-      "height": 3333,
-      "url": "https://unsplash.com/photos/Dl6jeyfihLk",
-      "download_url": "https://picsum.photos/id/3/5000/3333"
+      "download_url": "https://i.postimg.cc/wT6wqcXQ/pexels-rene-asmussen-1405528.jpg",
+      "heading": 'party',
+      "sub_heading": 'click, get started',
+      "disc": 'hello this is party time',
     },
     {
-      "id": "4",
       "author": "Alejandro Escamilla",
-      "width": 5000,
-      "height": 3333,
-      "url": "https://unsplash.com/photos/y83Je1OC6Wc",
-      "download_url": "https://picsum.photos/id/4/5000/3333"
+      "download_url": "https://i.postimg.cc/44BwLHcL/pexels-spora-weddings-15698752.jpg",
+      "heading": 'party',
+      "sub_heading": 'click, get started',
+      "disc": 'hello this is party time',
     },
     {
-      "id": "5",
       "author": "Alejandro Escamilla",
-      "width": 5000,
-      "height": 3334,
-      "url": "https://unsplash.com/photos/LF8gK8-HGSg",
-      "download_url": "https://picsum.photos/id/5/5000/3334"
+      "download_url": "https://i.postimg.cc/4xmf003K/chuttersnap-a-En-H4h-J-Mrs-unsplash-1.jpg",
+      "heading": 'party',
+      "sub_heading": 'click, get started',
+      "disc": 'hello this is party time',
     },
     {
-      "id": "6",
       "author": "Alejandro Escamilla",
-      "width": 5000,
-      "height": 3333,
-      "url": "https://unsplash.com/photos/tAKXap853rY",
-      "download_url": "https://picsum.photos/id/6/5000/3333"
+      "download_url": "https://i.postimg.cc/htVqdRZq/pexels-cottonbro-studio-3171815.jpg",
+      "heading": 'party',
+      "sub_heading": 'click, get started',
+      "disc": 'hello this is party time',
     },
 ]
   return (
-    <div className="slider-container overflow-x-hidden">
-      <Slider {...settings} className="">
+    <div className="slider-container overflow-hidden">
+      <Slider {...settings} className="outline-none border-none">
                 {images.map((image) => 
                     <div className="relative">
-                        <img src={image.download_url} alt={image.author} />
-                        <h1 className="text-9xl text-white absolute z-10 top-[300px] left-[500px] opacity-50">PARTY</h1>
-                        <Button color="primary" className="absolute top-[450px] left-[600px] bg-emerald-900">GET STARTED <FaArrowRightLong /></Button>
+                        <img src={image.download_url} alt={image.author} className="h-[600px] w-[1080px]"/>
+                        <div className="absolute z-10 top-[150px] right-48 max-w-[50%] text-left">
+                          <h1 className="text-8xl text-white opacity-45 capitalize ">{image.heading}</h1>
+                          <h2 className="text-4xl text-gray-400">{image.sub_heading}</h2>
+                          <p className="text-xl text-zinc-400">{image.disc}</p>
+                          <Button color="primary" className="bg-emerald-900 mt-3">GET STARTED FOR FREE<FaArrowRightLong /></Button>
+                        </div>
                     </div>
                 )}
       </Slider>
