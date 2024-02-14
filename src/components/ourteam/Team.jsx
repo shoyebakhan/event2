@@ -61,25 +61,25 @@ export default function Team() {
             id:0,
             "name": 'Ashutosh Jain',
             "job_role": 'Senior Project Head',
-            "image_url": "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+            "image_url": "https://i.postimg.cc/Pf0gtjyh/tonu-bhaiya.jpg",
         },
         {
             "id":1,
             "name": 'Prashant Saraswat',
             "job_role": 'Project Manager',
-            "image_url": "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+            "image_url": "https://i.postimg.cc/63jZxzxb/prashant.png",
         },
         {
             "id":2,
             "name": 'Shivam Sharma',
             "job_role": 'Marketing Head',
-            "image_url": "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+            "image_url": "https://i.postimg.cc/4yHYkg5n/shivam.png",
         },
         {
             "id":3,
             "name": 'Mohit Saraswat',
             "job_role": 'Marketing Head (CRM)',
-            "image_url": "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+            "image_url": "https://i.postimg.cc/YC6mCtwW/mohit.png",
         },
         {
             "id":4,
@@ -97,13 +97,13 @@ export default function Team() {
             "id":6,
             "name": 'Kanishka Singhal',
             "job_role": 'JS Developer',
-            "image_url": "https://i.postimg.cc/7LzsJVXs/kanishka.png",
+            "image_url": "https://i.postimg.cc/yd4kFhhf/Whats-App-Image-2024-02-14-at-13-16-29-b17ebaf4-removebg-preview.png",
         },
         {
             "id":7,
             "name": 'Ayush Goyal',
             "job_role": 'Front-end Developer',
-            "image_url": "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+            "image_url": "https://i.postimg.cc/ZYyd9883/jaadu-removebg-preview.png  ",
         },
         {
             "id":8,
@@ -151,7 +151,7 @@ export default function Team() {
             "id":15,
             "name": 'Arpit Jain',
             "job_role": 'Front-end Developer',
-            "image_url": "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+            "image_url": "",
         },
     ]
 return(
