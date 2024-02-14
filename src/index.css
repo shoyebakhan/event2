@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Riot&family=Salsa&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat:wght@400..700&family=Protest+Revolution&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Borel&family=Caveat:wght@400..700&family=Protest+Revolution&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-container h1{
+    font-family: 'Protest Revolution', sans-serif;
+}
+.slider-container h2{
+    font-family: "Agbalumo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+.slider-container p{
+    font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.slider-container Button{
+    font-family: "Salsa", cursive;
+}
+#team_heading{
+    font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+#name-tag{
+    font-family: "Salsa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.discription_text{
+    font-family: monospace;
+}
+/* .heading_text{
+  color: rgb(255, 69, 221);
+  color: radial-gradient(circle, rgba(255,96,225,1) 0%, rgba(255,194,124,1) 35%, rgba(183,207,148,1) 61%, rgba(80,89,210,1) 87%, rgba(68,0,255,1) 100%);
+} */
+
+.heading_text{
+  background: rgb(255, 69, 221);
+  background: radial-gradient(circle, rgba(255,96,225,1) 0%, rgba(255,194,124,1) 35%, rgba(183,207,148,1) 61%, rgba(80,89,210,1) 87%, rgba(68,0,255,1) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
