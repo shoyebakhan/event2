@@ -24,15 +24,15 @@ export default function Nav() {
   
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
-            {/* <AcmeLogo /> */}
-            <p className="font-bold text-inherit">EasyVents</p>
+            <img src="https://i.postimg.cc/N0TckQwm/3-removebg-preview.png" width={100} alt="EasyVents" className="bg-slate-900" />
+            {/* <p className="font-bold text-inherit">EasyVents</p> */}
           </NavbarBrand>
         </NavbarContent>
   
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarBrand>
-            {/* <AcmeLogo /> */}
-            <p className="font-bold text-inherit">EasyVents</p>
+          <img src="https://i.postimg.cc/N0TckQwm/3-removebg-preview.png" width={150} alt="Easyvents" className="bg-slate-900"/>
+            {/* <p className="font-bold text-inherit">EasyVents</p> */}
           </NavbarBrand>
           <NavbarItem>
             <Link color="foreground" href="#">

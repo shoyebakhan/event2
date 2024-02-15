@@ -1,0 +1,78 @@
+import React from 'react'
+
+// import component
+import {Input, input} from "@nextui-org/react";
+import {MailIcon} from './MailIcon';
+import {Button} from "@nextui-org/react";
+
+// import icons
+import { FaRegUser } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+
+
+function Map_contact() {
+
+  const [value, setValue] = React.useState("");
+  const [namevalue, setnamevalue] = React.useState("");
+  const [phonevalue, setphonevalue] = React.useState("");
+
+  const validateEmail = (value) => value.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i);
+
+  const isInvalid = React.useMemo(() => {
+    if (value === "") return false;
+
+    return validateEmail(value) ? false : true;
+  }, [value]);
+
+  return (
+    <div className='flex flex-wrap justify-evenly align-middle iPadPro12.9:flex-nowrap mb-6 gap-8'>
+      <div className='flex flex-wrap flex-col gap-7 p-4'>
+        <h1 className='text-center text-4xl font-medium iPhone4and4S:text-2xl iPhone6and6Sand7and8:text-3xl'>Connecting Through Coordinates</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.869123423727!2d77.0234318755361!3d26.492158478037002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397187cdd77c430d%3A0x8c19e77710276b81!2sKedar%20Medical%20Store!5e0!3m2!1sen!2sin!4v1707912206057!5m2!1sen!2sin" width="550" height="450" style={{border:0}} loading="lazy" className='iPhone4and4S:w-[300px] iPhone4and4S:h-[350px] iPhone6and6Sand7and8:w-[350px] iPhone6+and7+and8+:w-[390px]'></iframe>
+      </div>
+      <div className="flex flex-col gap-6 h-auto min-w-[300px]">
+        <h1 className='capitalize text-center text-4xl font-semibold mb-4 text-purple-600'>contact us</h1>
+        <Input
+        value={namevalue}
+        type='text' 
+        label='Name' 
+        placeholder='Enter your name' 
+        labelPlacement='outside' 
+        isClearable
+        onValueChange={setnamevalue}
+        startContent={
+            <FaRegUser className="text-lg text-default-400 pointer-events-none flex-shrink-0"/>
+        }/>
+        <Input
+          value={value}
+          isClearable
+          type="email"
+          label="Email"
+          placeholder="Enter your Email"
+          labelPlacement="outside"
+          isInvalid={isInvalid}
+          color={isInvalid ? "danger" : "none"}
+          errorMessage={isInvalid && "Please enter a valid email"}
+          onValueChange={setValue}
+          startContent={
+            <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+          }
+        />
+        <Input
+        value={phonevalue}
+        type='text' 
+        label='Mobile No.' 
+        placeholder='Enter your Phone Number' 
+        labelPlacement='outside'
+        isClearable
+        onValueChange={setphonevalue}
+        startContent={
+          <FaPhoneAlt className="text-lg text-default-400 pointer-events-none flex-shrink-0"/>
+        }/>
+        <Button color="secondary" className='w-[150px]'>Send Query</Button>  
+      </div>
+    </div>
+  )
+}
+
+export default Map_contact
