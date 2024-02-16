@@ -102,7 +102,7 @@ function Heropage() {
     },
 ]
   return (
-    <div className="slider-container overflow-hidden ">
+    <div id="home" className="slider-container overflow-hidden ">
       <Slider {...settings} className=" iPhone6+and7+and8+:hidden iPhone4and4S:hidden" key={images.id}>
                 {images.map((image) => 
                     <div className="relative" key={image.id}>

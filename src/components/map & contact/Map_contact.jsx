@@ -25,7 +25,7 @@ function Map_contact() {
   }, [value]);
 
   return (
-    <div className='flex flex-wrap justify-evenly align-middle iPadPro12.9:flex-nowrap mb-6 gap-8'>
+    <div id='contactus' className='flex flex-wrap justify-evenly align-middle iPadPro12.9:flex-nowrap mb-6 gap-8'>
       <div className='flex flex-wrap flex-col gap-7 p-4'>
         <h1 className='text-center text-4xl font-medium iPhone4and4S:text-2xl iPhone6and6Sand7and8:text-3xl'>Connecting Through Coordinates</h1>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.869123423727!2d77.0234318755361!3d26.492158478037002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397187cdd77c430d%3A0x8c19e77710276b81!2sKedar%20Medical%20Store!5e0!3m2!1sen!2sin!4v1707912206057!5m2!1sen!2sin" width="550" height="450" style={{border:0}} loading="lazy" className='iPhone4and4S:w-[300px] iPhone4and4S:h-[350px] iPhone6and6Sand7and8:w-[350px] iPhone6+and7+and8+:w-[390px]'></iframe>

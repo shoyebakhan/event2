@@ -7,6 +7,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+}
 .slider-container h1{
     font-family: 'Protest Revolution', sans-serif;
 }

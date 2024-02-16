@@ -1,7 +1,6 @@
 import React from "react";
 import { StarIcon } from "@heroicons/react/20/solid";
 import TextArea from "./TextArea" 
-// import RatingStars from "react-star-ratings-component";
 import HoverRating from "./RatingStar";
 
 const reviews = {
@@ -54,7 +53,7 @@ function classNames(...classes) {
 
 export default function Review() {
   return (
-    <div className="bg-white">
+    <div id="reviews" className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-x-8 lg:px-8 lg:py-32">
         <div className="lg:col-span-4">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">

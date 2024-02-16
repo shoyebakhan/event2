@@ -11,9 +11,9 @@ export default function App(){
     <Nav />
     <Heropage />
     <WhyUs />
-    <Map_contact />
     <Team />
     <Review />
+    <Map_contact />
     <Footer />
     </>
   )

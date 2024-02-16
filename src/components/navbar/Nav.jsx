@@ -8,7 +8,7 @@ export default function Nav() {
       "Home",
       "Services",
       "Our Team",
-      "Reviews & Ratings",
+      "Reviews",
       "Contact Us",
       "Log In",
     ];
@@ -18,6 +18,7 @@ export default function Nav() {
         isBordered
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
+        shouldHideOnScroll
       >
         <NavbarContent className="sm:hidden" justify="start">
           <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
@@ -34,27 +35,27 @@ export default function Nav() {
           <img src="https://i.postimg.cc/N0TckQwm/3-removebg-preview.png" width={150} alt="Easyvents" className="bg-slate-900"/>
           </NavbarBrand>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="#home">
               Home
             </Link>
           </NavbarItem>
           <NavbarItem isActive>
-            <Link href="#" aria-current="page">
+            <Link href="#services" aria-current="page">
               Services
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="#team">
               Our Team
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
-              Reviews & Ratings
+            <Link color="foreground" href="#reviews">
+              Reviews
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="#contactus">
               Contact Us
             </Link>
           </NavbarItem>

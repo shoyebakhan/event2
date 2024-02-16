@@ -155,7 +155,7 @@ export default function Team() {
         },
     ]
 return(
-        <div className="overflow-hidden py-12 bg-purple-200/40 iPhone4and4S:py-6 iPad1and2andMiniandAir:py-8">
+        <div id="team" className="overflow-hidden py-12 bg-purple-200/40 iPhone4and4S:py-6 iPad1and2andMiniandAir:py-8">
             <h3 id="team_heading" className="uppercase font-semibold text-center text-6xl mb-8 iPhone4and4S:text-4xl iPad1and2andMiniandAir:text-5xl iPad1and2andMiniandAir:mb-14 Laptops:mb-20" >our leaders</h3>
             <Slider {...imagesetting} >
                 {team.map((tdetails) => {
