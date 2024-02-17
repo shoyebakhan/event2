@@ -85,7 +85,7 @@ export default function Team() {
             "id":4,
             "name": 'Rudrani Pal',
             "job_role": 'React Developer',
-            "image_url": "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+            "image_url": "",
         },
         {
             "id":5,
@@ -133,7 +133,7 @@ export default function Team() {
             "id":12,
             "name": 'Sambhav Goswami',
             "job_role": 'Figma Designer',
-            "image_url": "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+            "image_url": "",
         },
         {
             "id":13,

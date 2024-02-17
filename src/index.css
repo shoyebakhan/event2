@@ -54,3 +54,17 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+/* Width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #a3a3a3;
+  border-radius: 2px; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e57d2d; }
