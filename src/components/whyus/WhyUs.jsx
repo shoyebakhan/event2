@@ -15,6 +15,7 @@ const actions = [
     icon: ClockIcon,
     iconForeground: 'text-teal-700',
     iconBackground: 'bg-teal-50',
+    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
   },
   {
     title: 'Verified By Customers',
@@ -22,6 +23,15 @@ const actions = [
     icon: CheckBadgeIcon,
     iconForeground: 'text-purple-700',
     iconBackground: 'bg-purple-50',
+    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
+  },
+  {
+    title: 'Schedule a one-on-one',
+    href: '#',
+    icon: UsersIcon,
+    iconForeground: 'text-sky-700',
+    iconBackground: 'bg-sky-50',
+    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
   },
   {
     title: 'Responsible Sourcing',
@@ -29,6 +39,7 @@ const actions = [
     icon: BanknotesIcon,
     iconForeground: 'text-yellow-700',
     iconBackground: 'bg-yellow-50',
+    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
   },
 ]
 
@@ -38,9 +49,9 @@ function classNames(...classes) {
 
 export default function WhyUs() {
   return (
-    <div id="services">
-      <h1 className="text-[2em] font-serif ml-5 my-6">Why Us</h1>      
-      <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-3 sm:gap-px sm:divide-y-0">
+    <div id="services" className="pt-20 pb-1 iPhone4and4S:pt-12 iPad1and2andMiniandAir:pt-12">
+      <h1 className="text-5xl font-serif ml-5 mb-14 iPhone4and4S:mb-8 iPad1and2andMiniandAir:mb-9">Why Us</h1>      
+      <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
         {actions.map((action, actionIdx) => (
           <div
             key={action.title}
@@ -71,19 +82,8 @@ export default function WhyUs() {
                   {action.title}
                 </a>
               </h3>
-              <p className="mt-2 text-sm text-gray-500">
-                Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et
-                quo et molestiae.
-              </p>
+              <p className="mt-2 text-sm text-gray-500">{action.paragraph}</p>
             </div>
-            <span
-              className="pointer-events-none absolute right-6 top-6 text-gray-300 group-hover:text-gray-400"
-              aria-hidden="true"
-            >
-              {/* <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z" />
-              </svg> */}
-            </span>
           </div>
         ))}
       </div>

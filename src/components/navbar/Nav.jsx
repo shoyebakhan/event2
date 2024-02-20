@@ -26,21 +26,21 @@ export default function Nav() {
   
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
-            <img src="https://i.postimg.cc/N0TckQwm/3-removebg-preview.png" width={100} alt="EasyVents" className="bg-slate-900" />
+            <img src="https://i.postimg.cc/G2FhvPSR/logo-removebg-preview.png" width={100} alt="EasyVents" />
           </NavbarBrand>
         </NavbarContent>
   
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarBrand>
-          <img src="https://i.postimg.cc/N0TckQwm/3-removebg-preview.png" width={150} alt="Easyvents" className="bg-slate-900"/>
+          <img src="https://i.postimg.cc/G2FhvPSR/logo-removebg-preview.png" width={110} height={100} alt="Easyvents"/>
           </NavbarBrand>
           <NavbarItem>
             <Link color="foreground" href="#home">
               Home
             </Link>
           </NavbarItem>
-          <NavbarItem isActive>
-            <Link href="#services" aria-current="page">
+          <NavbarItem>
+            <Link color="foreground" href="#services">
               Services
             </Link>
           </NavbarItem>
@@ -63,10 +63,10 @@ export default function Nav() {
   
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
-            <Link href="#">Login</Link>
+            <Link href="#" color="secondary">Login</Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} color="primary" href="#" variant="flat">
+            <Button as={Link} color="secondary" href="#" variant="flat">
               Sign Up
             </Button>
           </NavbarItem>
@@ -78,7 +78,7 @@ export default function Nav() {
               <Link
                 className="w-full"
                 color={
-                  index === menuItems.length - 1 ? "primary" : "foreground"
+                  index === menuItems.length - 1 ? "secondary" : "foreground"
                 }
                 href="#"
                 size="lg"
