@@ -102,7 +102,7 @@ export default function Team() {
     },
     {
       id: 7,
-      name: "Ayush Goyal",
+      name: "Aayush Goyal",
       job_role: "Front-end Developer",
       image_url: "https://i.postimg.cc/jjSmSYmy/IMG-20240220-105822-removebg-preview-1.png",
     },
@@ -140,7 +140,7 @@ export default function Team() {
       id: 13,
       name: "Tanishk Jain",
       job_role: "Front-end Developer",
-      image_url: "https://i.postimg.cc/MZD1sQxc/rtashu.png",
+      image_url: "https://i.postimg.cc/nLfryTW8/IMG-20240220-111228-removebg-preview.png",
     },
     {
       id: 14,
