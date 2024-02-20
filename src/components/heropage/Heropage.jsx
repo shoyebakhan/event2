@@ -1,7 +1,10 @@
 import React from "react";
+import { slidersdetails, mobiledetails } from "../../_Details";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import {Button, image} from "@nextui-org/react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import {Image} from "@nextui-org/react";
@@ -43,73 +46,6 @@ function Heropage() {
         }
       ]
     };
-  const slidersdetails = [
-    {
-      "id": 0,
-      "author": "Alejandro Escamilla",
-      "download_url": "https://i.postimg.cc/4429cf6h/flower-1.jpg",
-      "heading": 'Joyful Toast & Fare',
-      "sub_heading": "Let's Eat, Drink, and Celebrate",
-      "disc": 'Timeless grace unfolds on linen-draped tables, where laughter and fine fare intertwine.',
-    },
-    {
-      "id": 1,
-      "author": "Alejandro Escamilla",
-      "download_url": "https://i.postimg.cc/C1B9hLSp/pexels-best-wedding-photographers-india-4552397.jpg",
-      "heading": 'Rang Barse!',
-      "sub_heading": "A Baarat Bursting with Joy and Music",
-      "disc": 'Dhol thunders, colors explode, and joyous revelry spills into vibrant bazaars - celebrate the grand procession in style!',
-    },
-    {
-      "id": 2,
-      "author": "Alejandro Escamilla",
-      "download_url": "https://i.postimg.cc/T11tTTmv/pexels-asad-photo-maldives-169190.jpg",
-      "heading": 'Under the Glimmering Lights',
-      "sub_heading": 'A Table Adorned with Delight',
-      "disc": 'The table at which the main meal of the day is served, or the occasion when this meal is served',
-    },
-    {
-      "id": 3,
-      "author": "Alejandro Escamilla",
-      "download_url": "https://i.postimg.cc/wT6wqcXQ/pexels-rene-asmussen-1405528.jpg",
-      "heading": 'Capturing Birthday Bliss',
-      "sub_heading": 'Celebrating Another Year of Joy',
-      "disc": 'Immerse yourself in the vibrant colors and infectious laughter of our birthday celebrations, where every snapshot tells a story of happiness and togetherness.',
-    },
-    {
-      "id": 4,
-      "author": "Alejandro Escamilla",
-      "download_url": "https://i.postimg.cc/44BwLHcL/pexels-spora-weddings-15698752.jpg",
-      "heading": 'Radiant Rhythms',
-      "sub_heading": "Where Love Blossoms and Memories Flourish",
-      "disc": "Step into a world of timeless elegance and cherished traditions, where every moment is a testament to love's enduring beauty.",
-    },
-    {
-      "id": 5,
-      "author": "Alejandro Escamilla",
-      "download_url": "https://i.postimg.cc/4xmf003K/chuttersnap-a-En-H4h-J-Mrs-unsplash-1.jpg",
-      "heading": 'Savor the Flavor',
-      "sub_heading": 'Where Presentation Meets Palate',
-      "disc": 'Discover plates adorned with vibrant colors and intricate designs, where every bite is a feast for both the eyes and the palate."',
-    },
-    {
-      "id": 6,
-      "author": "Alejandro Escamilla",
-      "download_url": "https://i.postimg.cc/htVqdRZq/pexels-cottonbro-studio-3171815.jpg",
-      "heading": 'Time to Celebrate!',
-      "sub_heading": 'Where Every Moment is a Celebration!',
-      "disc": "Get ready to have a blast at our party! We've got great music, dancing, and lots of fun waiting for you.",
-    },
-]
-const mobiledetails = [
-  {
-    "author": "Alejandro Escamilla",
-    "download_url": "https://i.postimg.cc/htVqdRZq/pexels-cottonbro-studio-3171815.jpg",
-    "heading": 'Mystery Under the Masquerade',
-    "sub_heading": 'Disco Divas & Dudes',
-    "disc": "",
-  }
-]
   return (
     <div id="home" className="slider-container overflow-hidden ">
       <Slider {...settings} className=" iPhone6+and7+and8+:hidden iPhone4and4S:hidden" key={slidersdetails.id}>
