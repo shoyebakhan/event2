@@ -39,8 +39,8 @@ export default function Nav() {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
           <img
-            src="https://i.postimg.cc/YqcDg7c1/Beige-Green-Creative-Decorative-Typography-Monogram-Business-Logo-1.png"
-            width={150}
+            src="https://i.postimg.cc/65vLNbQz/2.png"
+            width={220}
             alt="EasyVents"
           />
         </NavbarBrand>
@@ -49,8 +49,8 @@ export default function Nav() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
           <img
-            src="https://i.postimg.cc/YqcDg7c1/Beige-Green-Creative-Decorative-Typography-Monogram-Business-Logo-1.png"
-            width={150}
+            src="https://i.postimg.cc/65vLNbQz/2.png"
+            width={220}
             alt="Easyvents"
           />
         </NavbarBrand>
