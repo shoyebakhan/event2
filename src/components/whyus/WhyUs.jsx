@@ -49,9 +49,9 @@ function classNames(...classes) {
 
 export default function WhyUs() {
   return (
-    <div id="services" className="pt-20 pb-1 iPhone4and4S:pt-12 iPad1and2andMiniandAir:pt-12">
+    <div id="services" className="pt-20 pb-10 iPhone4and4S:pt-12 iPad1and2andMiniandAir:pt-12">
       <h1 className="text-5xl font-serif ml-5 mb-14 iPhone4and4S:mb-8 iPad1and2andMiniandAir:mb-9">Why Us</h1>      
-      <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+      <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
         {actions.map((action, actionIdx) => (
           <div
             key={action.title}

@@ -99,7 +99,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <h1 className="text-white"><img src="https://i.postimg.cc/1tFhF9XN/logo2.png" width={160} alt="Easyvents"/></h1>
+            <h1 className="text-white"><img src="https://i.postimg.cc/YqcDg7c1/Beige-Green-Creative-Decorative-Typography-Monogram-Business-Logo-1.png" width={160} alt="Easyvents"/></h1>
             <p className="text-sm leading-6 text-gray-300">
               We can organize any events for you on your fingertips
             </p>
@@ -193,7 +193,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-gray-400">
-            &copy; 2024 Your Company, Inc. All rights reserved.
+            &copy; All rights reserved by k-tech education and designed by k-tech students.
           </p>
         </div>
       </div>
