@@ -134,7 +134,7 @@ export default function Team() {
       id: 12,
       name: "Sambhav Goswami",
       job_role: "Figma Designer",
-      image_url: "",
+      image_url: "https://i.postimg.cc/jSDwyLp5/Whats-App-Image-2024-02-20-at-11-20-21-626d6355-removebg-preview.png",
     },
     {
       id: 13,
