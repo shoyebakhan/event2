@@ -193,7 +193,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-gray-400">
-            &copy; 2024 Your Company, Inc. All rights reserved.
+            &copy; All rights reserved by k-tech education and designed by k-tech students.
           </p>
         </div>
       </div>

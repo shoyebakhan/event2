@@ -16,6 +16,7 @@ const actions = [
     iconForeground: 'text-teal-700',
     iconBackground: 'bg-teal-50',
     paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
+    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
   },
   {
     title: 'Verified By Customers',
@@ -32,6 +33,15 @@ const actions = [
     iconForeground: 'text-sky-700',
     iconBackground: 'bg-sky-50',
     paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
+    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
+  },
+  {
+    title: 'Schedule a one-on-one',
+    href: '#',
+    icon: UsersIcon,
+    iconForeground: 'text-sky-700',
+    iconBackground: 'bg-sky-50',
+    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
   },
   {
     title: 'Responsible Sourcing',
@@ -39,6 +49,7 @@ const actions = [
     icon: BanknotesIcon,
     iconForeground: 'text-yellow-700',
     iconBackground: 'bg-yellow-50',
+    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
     paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
   },
 ]
@@ -82,6 +93,7 @@ export default function WhyUs() {
                   {action.title}
                 </a>
               </h3>
+              <p className="mt-2 text-sm text-gray-500">{action.paragraph}</p>
               <p className="mt-2 text-sm text-gray-500">{action.paragraph}</p>
             </div>
           </div>

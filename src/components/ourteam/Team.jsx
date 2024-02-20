@@ -1,17 +1,17 @@
 import React from "react";
 
 //import avatar
-import {Avatar} from "@nextui-org/react";
+import { Avatar } from "@nextui-org/react";
 
-// import slider 
+// import slider
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Stack from '@mui/material/Stack';
+import Stack from "@mui/material/Stack";
 
 // import icons
 import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedinIn  } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
 
 export default function Team() {
     const imagesetting = {

@@ -1,5 +1,15 @@
-import React from "react";
-import {  Navbar,   NavbarBrand,   NavbarContent, Link, Button,   NavbarItem,   NavbarMenuToggle,  NavbarMenu,  NavbarMenuItem} from "@nextui-org/react";
+import React, { useState } from "react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  Link,
+  Button,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+} from "@nextui-org/react";
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
