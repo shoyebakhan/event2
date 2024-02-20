@@ -26,13 +26,13 @@ export default function Nav() {
   
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
-            <img src="https://i.postimg.cc/G2FhvPSR/logo-removebg-preview.png" width={100} alt="EasyVents" />
+            <img src="https://i.postimg.cc/YqcDg7c1/Beige-Green-Creative-Decorative-Typography-Monogram-Business-Logo-1.png" width={150} alt="EasyVents" />
           </NavbarBrand>
         </NavbarContent>
   
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarBrand>
-          <img src="https://i.postimg.cc/G2FhvPSR/logo-removebg-preview.png" width={110} height={100} alt="Easyvents"/>
+          <img src="https://i.postimg.cc/YqcDg7c1/Beige-Green-Creative-Decorative-Typography-Monogram-Business-Logo-1.png" width={150} alt="Easyvents"/>
           </NavbarBrand>
           <NavbarItem>
             <Link color="foreground" href="#home">
