@@ -79,7 +79,7 @@ export default function Team() {
       id: 3,
       name: "Mohit Saraswat",
       job_role: "Marketing Head (CRM)",
-      image_url: "https://i.postimg.cc/YC6mCtwW/mohit.png",
+      image_url: "https://i.postimg.cc/P52VcFJJ/IMG-20240220-110025-removebg-preview.png",
     },
     {
       id: 4,
@@ -104,7 +104,7 @@ export default function Team() {
       id: 7,
       name: "Ayush Goyal",
       job_role: "Front-end Developer",
-      image_url: "https://i.postimg.cc/ZYyd9883/jaadu-removebg-preview.png  ",
+      image_url: "https://i.postimg.cc/jjSmSYmy/IMG-20240220-105822-removebg-preview-1.png",
     },
     {
       id: 8,
