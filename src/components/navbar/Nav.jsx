@@ -11,17 +11,35 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
+import Login from "./Login";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Home",
-    "Services",
-    "Our Team",
-    "Reviews",
-    "Contact Us",
-    "Log In",
+    {
+      name:"Home",
+      href: "#home",
+  },
+    {
+      name:"Services",
+      href:"#services",
+    },
+    {
+      name:"Our Team",
+      href:"#team",
+    },
+    {
+      name:"Reviews",
+      href:"#reviews",
+    },
+    {
+      name:"Contact Us",
+      href:"#contactus",
+    },
+    {
+      name: "Login",
+    }
   ];
 
   return (
@@ -56,7 +74,7 @@ export default function Nav() {
           />
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="#home">
+        <Link color="foreground" href="#home">
             Home
           </Link>
         </NavbarItem>
@@ -85,7 +103,7 @@ export default function Nav() {
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
           <Link href="#" color="secondary">
-            Login
+            <Login/>
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -98,15 +116,16 @@ export default function Nav() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full"
+          
+            <Link onClick={() => item.name === <Login/> ? setIsMenuOpen(isMenuOpen): setIsMenuOpen(!isMenuOpen)}
+              className="w-full hover:bg-purple-200"
               color={
                 index === menuItems.length - 1 ? "secondary" : "foreground"
               }
-              href="#"
+              href={item.href}
               size="lg"
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}

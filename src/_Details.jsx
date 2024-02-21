@@ -107,7 +107,7 @@ export const team = [
     id: 15,
     name: "Arpit Jain",
     job_role: "Front-end Developer",
-    image_url: "",
+    image_url: "https://i.postimg.cc/50DM2qqt/IMG-20240221-003305-204-removebg-preview.png",
   },
   {
     id: 16,
@@ -195,7 +195,6 @@ export const mobiledetails = [
 export const actions = [
   {
     title: "24*7 Availability",
-    href: "#",
     icon: ClockIcon,
     iconForeground: "text-teal-700",
     iconBackground: "bg-teal-50",
@@ -204,7 +203,6 @@ export const actions = [
   },
   {
     title: "Verified By Customers",
-    href: "#",
     icon: CheckBadgeIcon,
     iconForeground: "text-purple-700",
     iconBackground: "bg-purple-50",
@@ -213,7 +211,6 @@ export const actions = [
   },
   {
     title: "Schedule a one-on-one",
-    href: "#",
     icon: UsersIcon,
     iconForeground: "text-sky-700",
     iconBackground: "bg-sky-50",
@@ -222,7 +219,6 @@ export const actions = [
   },
   {
     title: "Responsible Sourcing",
-    href: "#",
     icon: BanknotesIcon,
     iconForeground: "text-yellow-700",
     iconBackground: "bg-yellow-50",
