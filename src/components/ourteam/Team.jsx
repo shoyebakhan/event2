@@ -1,5 +1,6 @@
 import React from "react";
 import { team } from "../../_Details";
+import { DarkThemeToggle, Flowbite } from 'flowbite-react';
 
 //import avatar
 import { Avatar } from "@nextui-org/react";
@@ -60,7 +61,7 @@ export default function Team() {
   return (
     <div
       id="team"
-      className="overflow-hidden py-20 bg-blue-200/15 iPhone4and4S:py-10 iPad1and2andMiniandAir:py-10"
+      className="overflow-hidden py-20 iPhone4and4S:py-10 iPad1and2andMiniandAir:py-10"
     >
       <h3
         id="team_heading"

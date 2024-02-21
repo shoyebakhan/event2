@@ -22,23 +22,21 @@ export default function Login() {
               <ModalHeader className="flex flex-col gap-1">Log in</ModalHeader>
               <ModalBody>
                 <Input
-                  autoFocus
                   endContent={
                     <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
                   }
-                  label="Email"
                   placeholder="Enter your email"
-                  variant="bordered"
-                  required=""
+                  variant="underlined"
+                  isRequired
                 />
                 <Input
                   endContent={
                     <LockIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
                   }
-                  label="Password"
                   placeholder="Enter your password"
                   type="password"
-                  variant="bordered"
+                  variant="underlined"
+                  isRequired
                 />
                 <div className="flex py-2 px-1 justify-between">
                   <Checkbox

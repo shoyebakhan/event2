@@ -10,10 +10,10 @@ function classNames(...classes) {
 
 export default function Review() {
   return (
-    <div id="reviews" className="bg-white">
+    <div id="reviews" className="bg-white dark:bg-black">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-x-8 lg:px-8 lg:py-32">
         <div className="lg:col-span-4">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             Customer Reviews
           </h2>
 
@@ -26,7 +26,7 @@ export default function Review() {
                     className={classNames(
                       reviews.average > rating
                         ? "text-yellow-400"
-                        : "text-gray-300",
+                        : "text-gray-300 dark:text-white",
                       "h-5 w-5 flex-shrink-0"
                     )}
                     aria-hidden="true"
@@ -35,7 +35,7 @@ export default function Review() {
               </div>
               <p className="sr-only">{reviews.average} out of 5 stars</p>
             </div>
-            <p className="ml-2 text-sm text-gray-900">
+            <p className="ml-2 text-sm text-gray-900 dark:text-white">
               Based on {reviews.totalCount} reviews
             </p>
           </div>
@@ -47,7 +47,7 @@ export default function Review() {
               {reviews.counts.map((count) => (
                 <div key={count.rating} className="flex items-center text-sm">
                   <dt className="flex flex-1 items-center">
-                    <p className="w-3 font-medium text-gray-900">
+                    <p className="w-3 font-medium text-gray-900 dark:text-white">
                       {count.rating}
                       <span className="sr-only"> star reviews</span>
                     </p>
@@ -76,7 +76,7 @@ export default function Review() {
                       </div>
                     </div>
                   </dt>
-                  <dd className="ml-3 w-10 text-right text-sm tabular-nums text-gray-900">
+                  <dd className="ml-3 w-10 text-right text-sm tabular-nums text-gray-900 dark:text-white">
                     {Math.round((count.count / reviews.totalCount) * 100)}%
                   </dd>
                 </div>
@@ -85,10 +85,10 @@ export default function Review() {
           </div>
 
           <div className="mt-10">
-            <h3 className="text-lg font-medium text-gray-900">
+            <h3 className="text-lg font-medium text-gray-900 dark:text-white">
               Share your thoughts
             </h3>
-            <p className="mt-1 text-sm text-gray-600">
+            <p className="mt-1 text-sm text-gray-600 dark:text-white">
               If you’ve used this product, share your thoughts with other
               customers
             </p>
@@ -120,7 +120,7 @@ export default function Review() {
                       </svg>
                     </span>
                     <div className="ml-4">
-                      <h4 className="text-sm font-bold text-gray-900">
+                      <h4 className="text-sm font-bold text-gray-900 dark:text-white">
                         {review.author}
                       </h4>
                       <div className="mt-1 flex items-center">
@@ -142,7 +142,7 @@ export default function Review() {
                   </div>
 
                   <div
-                    className="mt-4 space-y-6 text-base italic text-gray-600"
+                    className="mt-4 space-y-6 text-base italic text-gray-600 dark:text-white"
                     dangerouslySetInnerHTML={{ __html: review.content }}
                   />
                 </div>

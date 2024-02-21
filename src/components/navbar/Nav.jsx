@@ -12,6 +12,7 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Login from "./Login";
+import { DarkThemeToggle, Flowbite } from 'flowbite-react';
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -61,6 +62,7 @@ export default function Nav() {
             src="https://i.postimg.cc/65vLNbQz/2.png"
             width={220}
             alt="EasyVents"
+            className="dark:brightness-200 iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:brightness-200 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
           />
         </NavbarBrand>
       </NavbarContent>
@@ -71,6 +73,7 @@ export default function Nav() {
             src="https://i.postimg.cc/65vLNbQz/2.png"
             width={220}
             alt="Easyvents"
+            className="dark:brightness-200 iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:brightness-200 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
           />
         </NavbarBrand>
         <NavbarItem>
@@ -102,14 +105,19 @@ export default function Nav() {
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#" color="secondary">
+          <Link href="#" color="secondary" className="dark:font-semibold">
             <Login/>
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="secondary" href="#" variant="flat">
+          <Button as={Link} color="secondary" href="#" variant="flat" className="dark:font-semibold">
             Sign Up
           </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Flowbite>
+            <DarkThemeToggle/>
+          </Flowbite>
         </NavbarItem>
       </NavbarContent>
 
