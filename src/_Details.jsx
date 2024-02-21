@@ -107,7 +107,7 @@ export const team = [
     id: 15,
     name: "Arpit Jain",
     job_role: "Front-end Developer",
-    image_url: "",
+    image_url: "https://i.postimg.cc/50DM2qqt/IMG-20240221-003305-204-removebg-preview.png",
   },
   {
     id: 16,
