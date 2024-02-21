@@ -1,47 +1,5 @@
 import React from "react";
-import {
-  AcademicCapIcon,
-  BanknotesIcon,
-  CheckBadgeIcon,
-  ClockIcon,
-  ReceiptRefundIcon,
-  UsersIcon,
-} from '@heroicons/react/24/outline'
-
-const actions = [
-  {
-    title: '24*7 Availability',
-    href: '#',
-    icon: ClockIcon,
-    iconForeground: 'text-teal-700',
-    iconBackground: 'bg-teal-50',
-    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
-  },
-  {
-    title: 'Verified By Customers',
-    href: '#',
-    icon: CheckBadgeIcon,
-    iconForeground: 'text-purple-700',
-    iconBackground: 'bg-purple-50',
-    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
-  },
-  {
-    title: 'Schedule a one-on-one',
-    href: '#',
-    icon: UsersIcon,
-    iconForeground: 'text-sky-700',
-    iconBackground: 'bg-sky-50',
-    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
-  },
-  {
-    title: 'Responsible Sourcing',
-    href: '#',
-    icon: BanknotesIcon,
-    iconForeground: 'text-yellow-700',
-    iconBackground: 'bg-yellow-50',
-    paragraph: 'Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.',
-  },
-]
+import { actions } from "../../_Details";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
