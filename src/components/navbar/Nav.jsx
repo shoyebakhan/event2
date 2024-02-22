@@ -102,7 +102,7 @@ export default function Nav() {
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#" color="secondary">
+          <Link color="secondary">
             <Login/>
           </Link>
         </NavbarItem>

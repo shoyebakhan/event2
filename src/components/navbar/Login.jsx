@@ -48,7 +48,7 @@ export default function Login() {
                   >
                     Remember me
                   </Checkbox>
-                  <Link color="primary" href="#" size="sm">
+                  <Link color="primary" size="sm">
                     Forgot password?
                   </Link>
                 </div>
