@@ -1,119 +1,27 @@
-import {
-  AcademicCapIcon,
-  BanknotesIcon,
-  CheckBadgeIcon,
-  ClockIcon,
-  ReceiptRefundIcon,
-  UsersIcon,
-} from "@heroicons/react/24/outline";
+// import components
+import { AcademicCapIcon, BanknotesIcon, CheckBadgeIcon, ClockIcon, ReceiptRefundIcon, UsersIcon, } from "@heroicons/react/24/outline";
 
-export const team = [
+// import data
+export const menuItems = [
   {
-    id: 0,
-    name: "Ashutosh Jain",
-    job_role: "Senior Project Head",
-    image_url: "https://i.postimg.cc/Pf0gtjyh/tonu-bhaiya.jpg",
+    name: "Home",
+    href: "#home",
   },
   {
-    id: 1,
-    name: "Prashant Saraswat",
-    job_role: "Project Manager",
-    image_url: "https://i.postimg.cc/63jZxzxb/prashant.png",
+    name: "Services",
+    href: "#services",
   },
   {
-    id: 2,
-    name: "Shivam Sharma",
-    job_role: "Marketing Head",
-    image_url: "https://i.postimg.cc/4yHYkg5n/shivam.png",
+    name: "Our Team",
+    href: "#team",
   },
   {
-    id: 3,
-    name: "Mohit Saraswat",
-    job_role: "Marketing Head (CRM)",
-    image_url:
-      "https://i.postimg.cc/P52VcFJJ/IMG-20240220-110025-removebg-preview.png",
+    name: "Reviews",
+    href: "#reviews",
   },
   {
-    id: 4,
-    name: "Rudrani Pal",
-    job_role: "React Developer",
-    image_url: "",
-  },
-  {
-    id: 5,
-    name: "Farheen Khan",
-    job_role: "Front-end Developer",
-    image_url: "https://i.postimg.cc/2jKJ1V7K/farheen.png",
-  },
-  {
-    id: 6,
-    name: "Kanishka Singhal",
-    job_role: "JS Developer",
-    image_url:
-      "https://i.postimg.cc/yd4kFhhf/Whats-App-Image-2024-02-14-at-13-16-29-b17ebaf4-removebg-preview.png",
-  },
-  {
-    id: 7,
-    name: "Aayush Goyal",
-    job_role: "Front-end Developer",
-    image_url:
-      "https://i.postimg.cc/jjSmSYmy/IMG-20240220-105822-removebg-preview-1.png",
-  },
-  {
-    id: 8,
-    name: "Hemant Bhargav",
-    job_role: "Full Stack Developer",
-    image_url: "https://i.postimg.cc/WpGcxsfq/hemant.png",
-  },
-  {
-    id: 9,
-    name: "Karan Jadaun",
-    job_role: "MERN Stack Developer",
-    image_url: "https://i.postimg.cc/Z5Fm346h/i2-removebg.png",
-  },
-  {
-    id: 10,
-    name: "Salman Khan",
-    job_role: "Front-end Developer",
-    image_url: "https://i.postimg.cc/pTSW6sQQ/salmon.jpg",
-  },
-  {
-    id: 11,
-    name: "Syd Sufiyan Ali",
-    job_role: "Front-end Developer",
-    image_url: "https://i.postimg.cc/RhtpKTMV/sufiyan.jpg",
-  },
-  {
-    id: 12,
-    name: "Sambhav Goswami",
-    job_role: "Figma Designer",
-    image_url:
-      "https://i.postimg.cc/jSDwyLp5/Whats-App-Image-2024-02-20-at-11-20-21-626d6355-removebg-preview.png",
-  },
-  {
-    id: 13,
-    name: "Tanishk Jain",
-    job_role: "Front-end Developer",
-    image_url:
-      "https://i.postimg.cc/nLfryTW8/IMG-20240220-111228-removebg-preview.png",
-  },
-  {
-    id: 14,
-    name: "Abbas Khan",
-    job_role: "Template Designer",
-    image_url: "https://i.postimg.cc/1tVhfs66/Abbas-removebg.png",
-  },
-  {
-    id: 15,
-    name: "Arpit Jain",
-    job_role: "Front-end Developer",
-    image_url: "https://i.postimg.cc/50DM2qqt/IMG-20240221-003305-204-removebg-preview.png",
-  },
-  {
-    id: 16,
-    name: "Priyanshi Choudhary",
-    job_role: "Front-end Developer",
-    image_url: "",
+    name: "Contact Us",
+    href: "#contactus",
   },
 ];
 
@@ -224,6 +132,116 @@ export const actions = [
     iconBackground: "bg-yellow-50",
     paragraph:
       "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.",
+  },
+];
+
+export const team = [
+  {
+    id: 0,
+    name: "Ashutosh Jain",
+    job_role: "Senior Project Head",
+    image_url: "https://i.postimg.cc/Pf0gtjyh/tonu-bhaiya.jpg",
+  },
+  {
+    id: 1,
+    name: "Prashant Saraswat",
+    job_role: "Project Manager",
+    image_url: "https://i.postimg.cc/63jZxzxb/prashant.png",
+  },
+  {
+    id: 2,
+    name: "Shivam Sharma",
+    job_role: "Marketing Head",
+    image_url: "https://i.postimg.cc/4yHYkg5n/shivam.png",
+  },
+  {
+    id: 3,
+    name: "Mohit Saraswat",
+    job_role: "Marketing Head (CRM)",
+    image_url:
+      "https://i.postimg.cc/P52VcFJJ/IMG-20240220-110025-removebg-preview.png",
+  },
+  {
+    id: 4,
+    name: "Rudrani Pal",
+    job_role: "React Developer",
+    image_url: "",
+  },
+  {
+    id: 5,
+    name: "Farheen Khan",
+    job_role: "Front-end Developer",
+    image_url: "https://i.postimg.cc/2jKJ1V7K/farheen.png",
+  },
+  {
+    id: 6,
+    name: "Kanishka Singhal",
+    job_role: "JS Developer",
+    image_url:
+      "https://i.postimg.cc/yd4kFhhf/Whats-App-Image-2024-02-14-at-13-16-29-b17ebaf4-removebg-preview.png",
+  },
+  {
+    id: 7,
+    name: "Aayush Goyal",
+    job_role: "Front-end Developer",
+    image_url:
+      "https://i.postimg.cc/jjSmSYmy/IMG-20240220-105822-removebg-preview-1.png",
+  },
+  {
+    id: 8,
+    name: "Hemant Bhargav",
+    job_role: "Full Stack Developer",
+    image_url: "https://i.postimg.cc/WpGcxsfq/hemant.png",
+  },
+  {
+    id: 9,
+    name: "Karan Jadaun",
+    job_role: "MERN Stack Developer",
+    image_url: "https://i.postimg.cc/Z5Fm346h/i2-removebg.png",
+  },
+  {
+    id: 10,
+    name: "Salman Khan",
+    job_role: "Front-end Developer",
+    image_url: "https://i.postimg.cc/pTSW6sQQ/salmon.jpg",
+  },
+  {
+    id: 11,
+    name: "Syd Sufiyan Ali",
+    job_role: "Front-end Developer",
+    image_url: "https://i.postimg.cc/RhtpKTMV/sufiyan.jpg",
+  },
+  {
+    id: 12,
+    name: "Sambhav Goswami",
+    job_role: "Figma Designer",
+    image_url:
+      "https://i.postimg.cc/jSDwyLp5/Whats-App-Image-2024-02-20-at-11-20-21-626d6355-removebg-preview.png",
+  },
+  {
+    id: 13,
+    name: "Tanishk Jain",
+    job_role: "Front-end Developer",
+    image_url:
+      "https://i.postimg.cc/nLfryTW8/IMG-20240220-111228-removebg-preview.png",
+  },
+  {
+    id: 14,
+    name: "Abbas Khan",
+    job_role: "Template Designer",
+    image_url: "https://i.postimg.cc/1tVhfs66/Abbas-removebg.png",
+  },
+  {
+    id: 15,
+    name: "Arpit Jain",
+    job_role: "Front-end Developer",
+    image_url: "https://i.postimg.cc/50DM2qqt/IMG-20240221-003305-204-removebg-preview.png",
+  },
+  {
+    id: 16,
+    name: "Priyanshi Choudhary",
+    job_role: "Front-end Developer",
+    image_url: "",
   },
 ];
 
@@ -354,6 +372,16 @@ export const reviews = {
           <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
         `,
       author: "Hemant Bhargav",
+      avatarSrc:
+        "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
+    },
+    {
+      id: 4,
+      rating: 5,
+      content: `
+          <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
+        `,
+      author: "Mohit Saraswat",
       avatarSrc:
         "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
     },

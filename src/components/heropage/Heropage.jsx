@@ -1,15 +1,18 @@
+// import library
 import React from "react";
-import { slidersdetails, mobiledetails } from "../../_Details";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// import component
 import {Button, image} from "@nextui-org/react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import {Image} from "@nextui-org/react";
 
-function Heropage() {
+// import details
+import { slidersdetails, mobiledetails } from "../../_Details";
+
+export default function Heropage() {
   const settings = {
     className: "center",
     centerMode: true,
@@ -72,4 +75,3 @@ function Heropage() {
     </div>
   );
 }
-export default Heropage;

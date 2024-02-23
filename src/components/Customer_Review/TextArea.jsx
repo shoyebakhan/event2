@@ -1,4 +1,7 @@
+// import library
 import React, {useState} from "react";
+
+// import components
 import { Button, Textarea } from "@nextui-org/react";
 
 export default function TextArea() {

@@ -1,5 +1,7 @@
-// eslint-disable-next-line no-unused-vars
+// import library
 import React, { useState } from "react";
+
+// impot component
 import {
   Navbar,
   NavbarBrand,
@@ -11,36 +13,14 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
-import Login from "./Login";
+import { DarkThemeToggle, Flowbite } from 'flowbite-react';
+import Login from "./login/Login";
+
+//import details
+import { menuItems } from "../../_Details";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-  const menuItems = [
-    {
-      name:"Home",
-      href: "#home",
-  },
-    {
-      name:"Services",
-      href:"#services",
-    },
-    {
-      name:"Our Team",
-      href:"#team",
-    },
-    {
-      name:"Reviews",
-      href:"#reviews",
-    },
-    {
-      name:"Contact Us",
-      href:"#contactus",
-    },
-    {
-      name: "Login",
-    }
-  ];
 
   return (
     <Navbar
@@ -61,6 +41,7 @@ export default function Nav() {
             src="https://i.postimg.cc/65vLNbQz/2.png"
             width={220}
             alt="EasyVents"
+            className="dark:brightness-200 class iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:brightness-200 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
           />
         </NavbarBrand>
       </NavbarContent>
@@ -71,57 +52,45 @@ export default function Nav() {
             src="https://i.postimg.cc/65vLNbQz/2.png"
             width={220}
             alt="Easyvents"
+            className="dark:brightness-200 iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:brightness-200 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
           />
         </NavbarBrand>
-        <NavbarItem>
-        <Link color="foreground" href="#home">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#services">
-            Services
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#team">
-            Our Team
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#reviews">
-            Reviews
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#contactus">
-            Contact Us
-          </Link>
-        </NavbarItem>
+        {menuItems.map((navbarItems) => (
+          <NavbarItem>
+            <Link color="foreground" href={navbarItems.href}>
+              {navbarItems.name}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link color="secondary">
-            <Login/>
+          <Link color="secondary" className="cursor-pointer">
+            <Login />
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="secondary" href="#" variant="flat">
+          <Button as={Link} color="secondary" variant="flat" className="dark:font-semibold">
             Sign Up
           </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Flowbite>
+            <DarkThemeToggle />
+          </Flowbite>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-          
-            <Link onClick={() => item.name === <Login/> ? setIsMenuOpen(isMenuOpen): setIsMenuOpen(!isMenuOpen)}
+            <Link onClick={() => item.name === <Login /> ? setIsMenuOpen(isMenuOpen) : setIsMenuOpen(!isMenuOpen)}
               className="w-full hover:bg-purple-200"
-              color={
-                index === menuItems.length - 1 ? "secondary" : "foreground"
-              }
+              color="foreground"
+              // color={
+              //   index === menuItems.length - 1 ? "secondary" : "foreground"
+              // }
               href={item.href}
               size="lg"
             >

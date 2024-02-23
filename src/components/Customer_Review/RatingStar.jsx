@@ -1,7 +1,11 @@
+// import library
 import * as React from 'react';
+
+// import components
 import Rating from '@mui/material/Rating';
 import Box from '@mui/material/Box';
 import StarIcon from '@mui/icons-material/Star';
+import { dark } from '@mui/material/styles/createPalette';
 
 const labels = {
   0.5: 'Useless',
@@ -31,7 +35,8 @@ export default function HoverRating() {
         width: 200,
         display: 'flex',
         alignItems: 'center',
-        marginTop: 3
+        marginTop: 3,
+        fontWeight: 400,
       }}
     >
       <Rating
@@ -45,7 +50,7 @@ export default function HoverRating() {
         onChangeActive={(event, newHover) => {
           setHover(newHover);
         }}
-        emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+        emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" className='dark:text-white'/>}
       />
       {value !== null && (
         <Box sx={{ ml: 2 }}>{labels[hover !== -1 ? hover : value]}</Box>
