@@ -41,7 +41,6 @@ export default {
       },
     },
   },
-  plugins: [nextui(),
-  require('flowbite/plugin')
+  plugins: [nextui()
   ],
 };

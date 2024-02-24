@@ -12,35 +12,34 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Login from "./Login";
-import { DarkThemeToggle, Flowbite } from 'flowbite-react';
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
     {
-      name:"Home",
+      name: "Home",
       href: "#home",
-  },
-    {
-      name:"Services",
-      href:"#services",
     },
     {
-      name:"Our Team",
-      href:"#team",
+      name: "Services",
+      href: "#services",
     },
     {
-      name:"Reviews",
-      href:"#reviews",
+      name: "Our Team",
+      href: "#team",
     },
     {
-      name:"Contact Us",
-      href:"#contactus",
+      name: "Reviews",
+      href: "#reviews",
+    },
+    {
+      name: "Contact Us",
+      href: "#contactus",
     },
     {
       name: "Login",
-    }
+    },
   ];
 
   return (
@@ -77,7 +76,7 @@ export default function Nav() {
           />
         </NavbarBrand>
         <NavbarItem>
-        <Link color="foreground" href="#home">
+          <Link color="foreground" href="#home">
             Home
           </Link>
         </NavbarItem>
@@ -106,26 +105,31 @@ export default function Nav() {
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
           <Link href="#" color="secondary" className="dark:font-semibold">
-            <Login/>
+            <Login />
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="secondary" href="#" variant="flat" className="dark:font-semibold">
+          <Button
+            as={Link}
+            color="secondary"
+            href="#"
+            variant="flat"
+            className="dark:font-semibold"
+          >
             Sign Up
           </Button>
-        </NavbarItem>
-        <NavbarItem>
-          <Flowbite>
-            <DarkThemeToggle/>
-          </Flowbite>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-          
-            <Link onClick={() => item.name === <Login/> ? setIsMenuOpen(isMenuOpen): setIsMenuOpen(!isMenuOpen)}
+            <Link
+              onClick={() =>
+                item.name === <Login />
+                  ? setIsMenuOpen(isMenuOpen)
+                  : setIsMenuOpen(!isMenuOpen)
+              }
               className="w-full hover:bg-purple-200"
               color={
                 index === menuItems.length - 1 ? "secondary" : "foreground"
