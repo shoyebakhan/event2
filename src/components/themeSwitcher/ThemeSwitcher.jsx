@@ -17,7 +17,7 @@ export function ThemeSwitcher() {
   return (
     <Switch
       defaultSelected
-      size="lg"
+      size="sm"
       color="secondary"
       thumbIcon={({ isSelected, className }) => isSelected ? (setTheme('dark'),<SunIcon className={className} />) : (setTheme('light'),<MoonIcon className={className}/>)}
       >

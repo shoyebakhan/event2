@@ -65,7 +65,7 @@ export default function Heropage() {
                 )}
       </Slider>
       <div className="hidden relative iPhone6+and7+and8+:block iPhone4and4S:block">
-        <Image isZoomed isBlurred radius="none" src="https://i.postimg.cc/PxHRmQky/pexels-mat-brown-1395967.jpg" alt="not found" className="h-[auto] w-[500px] brightness-[30%]" />
+        <Image isZoomed isBlurred radius="none" src="https://i.postimg.cc/PxHRmQky/pexels-mat-brown-1395967.jpg" alt="not found" className="h-[auto] w-full brightness-[30%]" />
         <div className="absolute z-10 top-[25%] left-[5%] max-w-[100%] text-left">
           <h1 className="text-4xl uppercase">{mobiledetails[0].heading}</h1>
           <h2 id="mobile_subtitle" className="text-2xl my-2">{mobiledetails[0].sub_heading}</h2>

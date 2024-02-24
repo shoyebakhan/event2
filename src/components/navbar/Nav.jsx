@@ -30,19 +30,19 @@ export default function Nav() {
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
     >
-      <NavbarContent className="sm:hidden" justify="start">
+      <NavbarContent className="sm:hidden" justify="center">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
+      <NavbarContent className="sm:hidden bg-red- pr-2" justify="center">
         <NavbarBrand>
           <img
             src="https://i.postimg.cc/65vLNbQz/2.png"
-            width={220}
+            width={250}
             alt="EasyVents"
-            className="dark:brightness-200 class iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:brightness-200 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
+            className=" class iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
           />
         </NavbarBrand>
       </NavbarContent>
@@ -53,7 +53,7 @@ export default function Nav() {
             src="https://i.postimg.cc/65vLNbQz/2.png"
             width={220}
             alt="Easyvents"
-            className="dark:brightness-200 iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:brightness-200 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
+            className=" iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
           />
         </NavbarBrand>
         {menuItems.map((navbarItems) => (
@@ -75,7 +75,7 @@ export default function Nav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="secondary" variant="flat" className="dark:font-semibold">
+          <Button as={Link} color="secondary" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
