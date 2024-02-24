@@ -15,6 +15,7 @@ import {
 } from "@nextui-org/react";
 import { DarkThemeToggle, Flowbite } from 'flowbite-react';
 import Login from "./login/Login";
+import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher";
 
 //import details
 import { menuItems } from "../../_Details";
@@ -65,6 +66,9 @@ export default function Nav() {
       </NavbarContent>
 
       <NavbarContent justify="end">
+        <NavbarItem>
+          <ThemeSwitcher/>
+        </NavbarItem>
         <NavbarItem className="hidden lg:flex">
           <Link color="secondary" className="cursor-pointer">
             <Login />
@@ -74,11 +78,6 @@ export default function Nav() {
           <Button as={Link} color="secondary" variant="flat" className="dark:font-semibold">
             Sign Up
           </Button>
-        </NavbarItem>
-        <NavbarItem>
-          <Flowbite>
-            <DarkThemeToggle />
-          </Flowbite>
         </NavbarItem>
       </NavbarContent>
 
