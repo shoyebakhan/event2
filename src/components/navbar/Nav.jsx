@@ -1,5 +1,7 @@
-// eslint-disable-next-line no-unused-vars
+// import library
 import React, { useState } from "react";
+
+// impot component
 import {
   Navbar,
   NavbarBrand,
@@ -12,34 +14,35 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Login from "./Login";
+import { DarkThemeToggle, Flowbite } from 'flowbite-react';
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
     {
-      name: "Home",
+      name:"Home",
       href: "#home",
+  },
+    {
+      name:"Services",
+      href:"#services",
     },
     {
-      name: "Services",
-      href: "#services",
+      name:"Our Team",
+      href:"#team",
     },
     {
-      name: "Our Team",
-      href: "#team",
+      name:"Reviews",
+      href:"#reviews",
     },
     {
-      name: "Reviews",
-      href: "#reviews",
-    },
-    {
-      name: "Contact Us",
-      href: "#contactus",
+      name:"Contact Us",
+      href:"#contactus",
     },
     {
       name: "Login",
-    },
+    }
   ];
 
   return (
@@ -49,19 +52,19 @@ export default function Nav() {
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
     >
-      <NavbarContent className="sm:hidden" justify="start">
+      <NavbarContent className="sm:hidden" justify="center">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
+      <NavbarContent className="sm:hidden bg-red- pr-2" justify="center">
         <NavbarBrand>
           <img
             src="https://i.postimg.cc/65vLNbQz/2.png"
-            width={220}
+            width={250}
             alt="EasyVents"
-            className="dark:brightness-200 iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:brightness-200 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
+            className=" class iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
           />
         </NavbarBrand>
       </NavbarContent>
@@ -72,11 +75,11 @@ export default function Nav() {
             src="https://i.postimg.cc/65vLNbQz/2.png"
             width={220}
             alt="Easyvents"
-            className="dark:brightness-200 iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:brightness-200 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
+            className=" iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
           />
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="#home">
+        <Link color="foreground" href="#home">
             Home
           </Link>
         </NavbarItem>
@@ -103,19 +106,16 @@ export default function Nav() {
       </NavbarContent>
 
       <NavbarContent justify="end">
+        <NavbarItem>
+          <ThemeSwitcher/>
+        </NavbarItem>
         <NavbarItem className="hidden lg:flex">
           <Link href="#" color="secondary" className="dark:font-semibold">
-            <Login />
+            <Login/>
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button
-            as={Link}
-            color="secondary"
-            href="#"
-            variant="flat"
-            className="dark:font-semibold"
-          >
+          <Button as={Link} color="secondary" href="#" variant="flat" className="dark:font-semibold">
             Sign Up
           </Button>
         </NavbarItem>
@@ -124,16 +124,13 @@ export default function Nav() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              onClick={() =>
-                item.name === <Login />
-                  ? setIsMenuOpen(isMenuOpen)
-                  : setIsMenuOpen(!isMenuOpen)
-              }
+          
+            <Link onClick={() => item.name === <Login/> ? setIsMenuOpen(isMenuOpen): setIsMenuOpen(!isMenuOpen)}
               className="w-full hover:bg-purple-200"
-              color={
-                index === menuItems.length - 1 ? "secondary" : "foreground"
-              }
+              color="foreground"
+              // color={
+              //   index === menuItems.length - 1 ? "secondary" : "foreground"
+              // }
               href={item.href}
               size="lg"
             >

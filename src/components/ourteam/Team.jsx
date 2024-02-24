@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Stack from "@mui/material/Stack";
 
 // import icons
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 
 export default function Team() {
@@ -60,7 +60,7 @@ export default function Team() {
   return (
     <div
       id="team"
-      className="overflow-hidden py-20 iPhone4and4S:py-10 iPad1and2andMiniandAir:py-10"
+      className="overflow-hidden py-20 iPhone4and4S:py-10 iPad1and2andMiniandAir:py-10 dark"
     >
       <h3
         id="team_heading"
@@ -93,12 +93,12 @@ export default function Team() {
                     className="w-full inline-flex justify-evenly mt-3"
                   >
                     <i className="border-2 rounded-full p-2 bg-gray-600">
-                      <a href="https://twitter.com/">
-                        <FaXTwitter className="text-md text-white " />
+                      <a href={tdetails.githubId}>
+                        <FaGithub className="text-md text-white " />
                       </a>
                     </i>
                     <i className="border-2 rounded-full p-2 bg-blue-600">
-                      <a href="https://in.linkedin.com/">
+                      <a href={tdetails.linkedinId}>
                         <FaLinkedinIn className="text-lg text-white" />
                       </a>
                     </i>

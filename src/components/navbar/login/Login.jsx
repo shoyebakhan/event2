@@ -1,20 +1,43 @@
+// import library
 import React from "react";
-import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Checkbox, Input, Link} from "@nextui-org/react";
-import {MailIcon} from './MailIcon.jsx';
-import {LockIcon} from './LockIcon.jsx';
+
+// import components
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Checkbox, Input, Link } from "@nextui-org/react";
+import { MailIcon } from './MailIcon.jsx';
+import { LockIcon } from './LockIcon.jsx';
 
 export default function Login() {
-  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <>
       <Link onPress={onOpen} color="secondary">Login</Link>
-      <Modal 
-        isOpen={isOpen} 
+      <Modal
+        isOpen={isOpen}
         onOpenChange={onOpenChange}
         placement="top-center"
-        backdrop= "blur"
+        backdrop="blur"
         id="login"
+        motionProps={{
+          variants: {
+            enter: {
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.3,
+                ease: "easeOut",
+              },
+            },
+            exit: {
+              y: -30,
+              opacity: 0,
+              transition: {
+                duration: 0.2,
+                ease: "easeIn",
+              },
+            },
+          }
+        }}
       >
         <ModalContent>
           {(onClose) => (
@@ -46,7 +69,7 @@ export default function Login() {
                   >
                     Remember me
                   </Checkbox>
-                  <Link color="primary" href="#" size="sm">
+                  <Link color="primary" size="sm">
                     Forgot password?
                   </Link>
                 </div>
@@ -55,7 +78,7 @@ export default function Login() {
                 <Button color="danger" variant="flat" onPress={onClose}>
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
+                <Button color="secondary"  onPress={onClose}>
                   Sign in
                 </Button>
               </ModalFooter>

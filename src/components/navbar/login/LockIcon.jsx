@@ -1,4 +1,6 @@
+// import library
 import React from "react";
+
 export const LockIcon = (props) => (
   <svg
     aria-hidden="true"

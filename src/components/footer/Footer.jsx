@@ -1,5 +1,9 @@
+// import library
 import React from "react";
+
+// import details
 import { navigation } from "../../_Details";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 dark:bg-black" aria-labelledby="footer-heading">
@@ -9,7 +13,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <img src="https://i.postimg.cc/R0CdR6yB/1.png" width={250} alt="Easyvents"/>
+            <h1 className="text-white"><img src="https://i.postimg.cc/R0CdR6yB/1.png" width={250} alt="Easyvents"/></h1>
             <p className="text-sm leading-6 text-gray-300">
               We can organize any events for you on your fingertips
             </p>
