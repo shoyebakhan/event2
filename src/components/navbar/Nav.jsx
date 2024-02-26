@@ -13,15 +13,37 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
+import Login from "./Login";
 import { DarkThemeToggle, Flowbite } from 'flowbite-react';
-import Login from "./login/Login";
-import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher";
-
-//import details
-import { menuItems } from "../../_Details";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const menuItems = [
+    {
+      name:"Home",
+      href: "#home",
+  },
+    {
+      name:"Services",
+      href:"#services",
+    },
+    {
+      name:"Our Team",
+      href:"#team",
+    },
+    {
+      name:"Reviews",
+      href:"#reviews",
+    },
+    {
+      name:"Contact Us",
+      href:"#contactus",
+    },
+    {
+      name: "Login",
+    }
+  ];
 
   return (
     <Navbar
@@ -56,13 +78,31 @@ export default function Nav() {
             className=" iPhone4and4S:max-w-[7rem] iPhone4and4S:-mr-6 iPhone4and4S:dark:contrast-200 iPhone4and4S:dark:saturate-200"
           />
         </NavbarBrand>
-        {menuItems.map((navbarItems) => (
-          <NavbarItem>
-            <Link color="foreground" href={navbarItems.href}>
-              {navbarItems.name}
-            </Link>
-          </NavbarItem>
-        ))}
+        <NavbarItem>
+        <Link color="foreground" href="#home">
+            Home
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#services">
+            Services
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#team">
+            Our Team
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#reviews">
+            Reviews
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#contactus">
+            Contact Us
+          </Link>
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarContent justify="end">
@@ -70,12 +110,12 @@ export default function Nav() {
           <ThemeSwitcher/>
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">
-          <Link color="secondary" className="cursor-pointer">
-            <Login />
+          <Link href="#" color="secondary" className="dark:font-semibold">
+            <Login/>
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="secondary" variant="flat">
+          <Button as={Link} color="secondary" href="#" variant="flat" className="dark:font-semibold">
             Sign Up
           </Button>
         </NavbarItem>
@@ -84,7 +124,8 @@ export default function Nav() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link onClick={() => item.name === <Login /> ? setIsMenuOpen(isMenuOpen) : setIsMenuOpen(!isMenuOpen)}
+          
+            <Link onClick={() => item.name === <Login/> ? setIsMenuOpen(isMenuOpen): setIsMenuOpen(!isMenuOpen)}
               className="w-full hover:bg-purple-200"
               color="foreground"
               // color={
