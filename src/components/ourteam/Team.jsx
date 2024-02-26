@@ -94,12 +94,12 @@ export default function Team() {
                     className="w-full inline-flex justify-evenly mt-3"
                   >
                     <i className="border-2 rounded-full p-2 bg-gray-600">
-                      <a href={tdetails.githubId}>
+                      <a href={tdetails.githubId} target="_blank">
                         <FaGithub className="text-md text-white " />
                       </a>
                     </i>
                     <i className="border-2 rounded-full p-2 bg-blue-600">
-                      <a href={tdetails.linkedinId}>
+                      <a href={tdetails.linkedinId} target="_blank">
                         <FaLinkedinIn className="text-lg text-white" />
                       </a>
                     </i>

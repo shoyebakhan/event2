@@ -1,80 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Riot&family=Salsa&family=Tektur:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat:wght@400..700&family=Protest+Revolution&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Borel&family=Caveat:wght@400..700&family=Protest+Revolution&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Riot&family=Salsa&family=Tektur:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat:wght@400..700&family=Protest+Revolution&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Borel&family=Caveat:wght@400..700&family=Protest+Revolution&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   scroll-behavior: smooth;
 }
-.slider-container h1{
-    font-family: 'Protest Revolution', sans-serif;
-    background: rgb(255, 69, 221);
-    background: radial-gradient(circle, rgba(255,96,225,1) 0%, rgba(255,194,124,1) 35%, rgba(183,207,148,1) 61%, rgba(80,89,210,1) 87%, rgba(68,0,255,1) 100%);
-    -webkit-background-clip: text;
-    color: transparent;
+.slider-container h1 {
+  font-family: "Protest Revolution", sans-serif;
+  background: rgb(255, 69, 221);
+  background: radial-gradient(
+    circle,
+    rgba(255, 96, 225, 1) 0%,
+    rgba(255, 194, 124, 1) 35%,
+    rgba(183, 207, 148, 1) 61%,
+    rgba(80, 89, 210, 1) 87%,
+    rgba(68, 0, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
-.slider-container h2{
-    font-family: "Agbalumo", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 8px;
-    color: darkseagreen;
+.slider-container h2 {
+  font-family: "Agbalumo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 8px;
+  color: darkseagreen;
 }
-.slider-container p{
+.slider-container p {
   font-family: "Ysabeau Infant", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: lightsteelblue;
 }
-.slider-container Button{
-    font-family: "Salsa", cursive;
+.slider-container Button {
+  font-family: "Salsa", cursive;
 }
-#mobile_subtitle{
+#mobile_subtitle {
   font-family: "Ysabeau Infant", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: lightsteelblue;
 }
-#team_heading{
-    font-family: "Tektur", sans-serif;
+.slick-dots button:before {
+  color: purple !important;
+}
+.slick-dots li.slick-active button:before {
+  color: rgb(193, 0, 193) !important;
+}
+#team_heading {
+  font-family: "Tektur", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
-#name-tag{
-    font-family: "Salsa", cursive;
+#name-tag {
+  font-family: "Salsa", cursive;
   font-weight: 400;
   font-style: normal;
 }
-.discription_text{
-    font-family: monospace;
+.discription_text {
+  font-family: monospace;
 }
 
 /* Width */
 ::-webkit-scrollbar {
-  width: 10px; }
+  width: 10px;
+}
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #a3a3a3;
-  border-radius: 2px; 
+  background: #ffffff;
+  border-radius: 2px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #e57d2d; }
+  background: rgb(145, 10, 145);
+}
 
-.maptitle{
+.maptitle {
   font-family: "Kode Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
