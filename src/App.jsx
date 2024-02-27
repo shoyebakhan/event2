@@ -6,6 +6,7 @@ import Team from "./components/ourteam/Team"
 import Review from "./components/Customer_Review/Review"
 import Footer from "./components/footer/Footer"
 import React from "react";
+import Signup from "./Signup"
 
 export default function App(){
   return(
@@ -15,6 +16,7 @@ export default function App(){
     {/* <About/> */}
     <WhyUs />
     <Team />
+    <Signup/>
     <Review />
     <Map_contact />
     <Footer />

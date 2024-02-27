@@ -6,7 +6,6 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-    'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
     extend: {
@@ -41,11 +40,7 @@ export default {
       },
     },
   },
-<<<<<<< HEAD
-  plugins: [nextui()
-=======
-  plugins: [
-    nextui(),
->>>>>>> 3eb7827152b0175383184a2dc6c15a1d1a9754e5
+  plugins: [nextui(),
+    require('@tailwindcss/forms')
   ],
 };

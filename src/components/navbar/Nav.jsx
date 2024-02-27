@@ -13,8 +13,8 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
-import Login from "./Login";
-import { DarkThemeToggle, Flowbite } from 'flowbite-react';
+import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher";
+import Login from "./login/Login"
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
