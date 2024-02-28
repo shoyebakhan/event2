@@ -111,7 +111,7 @@ export default function Nav() {
           <ThemeSwitcher/>
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">
-          <Link href="#" color="secondary" className="dark:font-semibold">
+          <Link color="secondary" className="dark:font-semibold cursor-pointer">
             <Login/>
           </Link>
         </NavbarItem>
