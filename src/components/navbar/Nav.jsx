@@ -15,6 +15,7 @@ import {
 } from "@nextui-org/react";
 import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher";
 import Login from "./login/Login"
+import SignupButton from "../signup/SignupButton";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -115,9 +116,7 @@ export default function Nav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="secondary" href="#" variant="flat" className="dark:font-semibold">
-            Sign Up
-          </Button>
+            <SignupButton/>
         </NavbarItem>
       </NavbarContent>
 

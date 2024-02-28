@@ -41,6 +41,5 @@ export default {
     },
   },
   plugins: [nextui(),
-    require('@tailwindcss/forms')
   ],
 };
