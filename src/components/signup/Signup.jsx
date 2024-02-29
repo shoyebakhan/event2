@@ -1,3 +1,6 @@
+import { Input } from "@nextui-org/react";
+import { signupAttribute } from "../../_Details";
+
 export default function Signup() {
   return (
     <div className="flex min-h-full flex-1">
@@ -5,7 +8,7 @@ export default function Signup() {
         <div className="mx-auto w-full max-w-sm lg:w-96">
           <div>
             <img
-              className="h-14 -ml-10"
+              className="h-14 -ml-10 signupImg"
               src="https://i.postimg.cc/R0CdR6yB/1.png"
               alt="Your Company"
             />
@@ -18,90 +21,30 @@ export default function Signup() {
             <div>
               <form action="#" method="POST" className="space-y-6">
                 <div className="flex flex-col gap-4">
-                  <div className="grid grid-cols-2 gap-2">
-                    <div className="mt-2">
-                      <input
-                        id="name"
-                        name="name"
-                        type="name"
-                        autoComplete="name"
+                    {signupAttribute.map((item, index) => {
+                      return(
+                        <div className={index === 2 ? "grid grid-cols-2 gap-2" : "grid grid-cols-1"}>
+                      <Input
+                        id={item.id}
+                        name={item.name}
+                        type={item.type}
+                        autoComplete={item.autoComplete}
                         required
-                        placeholder="First Name"
-                        className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset focus:ring-2 text-black focus:ring-inset sm:text-sm sm:leading-6 bg-white
-                        placeholder:text-black pl-2"
+                        placeholder={item.placeholder}
+                        className="w-full sm:text-sm sm:leading-6
+                        placeholder:text-black"
+                        variant="underlined"
+                        size="sm"
                       />
-                    </div>
-
-                    <div className="mt-2">
-                      <input
-                        id="name"
-                        name="name"
-                        type="name"
-                        autoComplete="name"
-                        required
-                        placeholder="Last Name"
-                        className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset focus:ring-2 text-black focus:ring-inset sm:text-sm sm:leading-6 bg-white
-                        placeholder:text-black pl-2"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="mt-2">
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      required
-                      placeholder="Enter Your Email Address"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset focus:ring-2 text-black focus:ring-inset sm:text-sm sm:leading-6 bg-white
-                        placeholder:text-black pl-2"
-                    />
-                  </div>
-
-                  <div className="mt-2">
-                    <input
-                      id="number"
-                      name="number"
-                      type="number"
-                      autoComplete="number"
-                      required
-                      placeholder="Enter Your Phone Number"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset focus:ring-2 text-black focus:ring-inset sm:text-sm sm:leading-6 bg-white
-                        placeholder:text-black pl-2"
-                    />
-                  </div>
-
-                  <div className="mt-2">
-                    <input
-                      id="password"
-                      name="password"
-                      type="password"
-                      autoComplete="password"
-                      required
-                      placeholder="Enter Your Password"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset focus:ring-2 text-black focus:ring-inset sm:text-sm sm:leading-6 bg-white
-                        placeholder:text-black pl-2"
-                    />
-                  </div>
-
-                  <div className="mt-2">
-                    <input
-                      id="password"
-                      name="password"
-                      type="password"
-                      autoComplete="password"
-                      required
-                      placeholder="Confirm Your Password"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset focus:ring-2 text-black focus:ring-inset sm:text-sm sm:leading-6 bg-white
-                        placeholder:text-black pl-2"
-                    />
+                      </div>
+                      )
+                    })}
                   </div>
 
                   <div className="mt-2">
                     <button
                       type="submit"
-                      className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="flex w-full justify-center rounded-md bg-purple-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-purple-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                     >
                       Register
                     </button>
@@ -116,7 +59,7 @@ export default function Signup() {
                         <div className="w-full border-t border-gray-200" />
                       </div>
                       <div className="relative flex justify-center text-sm font-medium leading-6">
-                        <span className="bg-white px-6 text-gray-900">
+                        <span className="bg-white rounded-xl px-6 text-gray-900">
                           Or continue with
                         </span>
                       </div>
@@ -176,19 +119,18 @@ export default function Signup() {
                       </a>
                     </div>
                   </div>
-                </div>
               </form>
             </div>
           </div>
         </div>
-        </div>
+      </div>
       <div className="relative hidden w-0 flex-1 lg:block">
-          <img
-            className="absolute inset-0 h-full w-full object-cover"
-            src="https://i.postimg.cc/Vk7ZBhH3/pexels-marina-utrabo-1729797.jpg"
-            alt=""
-          />
-        </div>
+        <img
+          className="absolute inset-0 h-full w-full object-cover"
+          src="https://i.postimg.cc/Vk7ZBhH3/pexels-marina-utrabo-1729797.jpg"
+          alt=""
+        />
+      </div>
     </div>
   );
 }
