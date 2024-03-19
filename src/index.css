@@ -1,109 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Riot&family=Salsa&family=Tektur:wght@400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat:wght@400..700&family=Protest+Revolution&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Borel&family=Caveat:wght@400..700&family=Protest+Revolution&family=Protest+Riot&family=Rubik+Scribble&family=Salsa&family=Tektur:wght@400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  scroll-behavior: smooth;
-}
-.slider-container h1 {
-  font-family: "Protest Revolution", sans-serif;
-  background: rgb(255, 69, 221);
-  background: radial-gradient(
-    circle,
-    rgba(255, 96, 225, 1) 0%,
-    rgba(255, 194, 124, 1) 35%,
-    rgba(183, 207, 148, 1) 61%,
-    rgba(80, 89, 210, 1) 87%,
-    rgba(68, 0, 255, 1) 100%
-  );
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.slider-container h2 {
-  font-family: "Agbalumo", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  margin-bottom: 8px;
-  color: darkseagreen;
-}
-.slider-container p {
-  font-family: "Ysabeau Infant", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: lightsteelblue;
-}
-.slider-container Button {
-  font-family: "Salsa", cursive;
-}
-#mobile_subtitle {
-  font-family: "Ysabeau Infant", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: lightsteelblue;
-}
-.slick-dots button:before {
-  color: purple !important;
-}
-.slick-dots li.slick-active button:before {
-  color: rgb(193, 0, 193) !important;
-}
-#team_heading {
-  font-family: "Tektur", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-#name-tag {
-  font-family: "Salsa", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-.discription_text {
-  font-family: monospace;
+.garden-image {
+  background-image: url("https://image.wedmegood.com/resized/1000X/uploads/member/4174446/1701420205_WhatsApp_Image_2023_12_01_at_00.39.42__2_.jpeg?crop=0,0,2048,1152");
+  background-size: cover;
+  background-position-y: -13rem;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
-/* Width */
-::-webkit-scrollbar {
-  width: 10px;
+.garden-image:hover {
+  background-image: url("https://image.wedmegood.com/resized/1000X/uploads/member/4174446/1701420205_WhatsApp_Image_2023_12_01_at_00.39.42__2_.jpeg?crop=0,0,2048,1152");
+  background-size: cover;
+  background-position-y: -13rem;
+  filter: none;
+  -webkit-filter: grayscale(0);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  animation-duration: 500;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #ffffff;
-  border-radius: 2px;
+.hotel-image {
+  background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/a1/9c/80/essentia-luxury-hotel.jpg?w=700&h=-1&s=1");
+  background-size: cover;
+  background-position: center;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(145, 10, 145);
-}
+.bride-image {
+  background-image: url("https://lh4.googleusercontent.com/uWbGQtbnkkRA0i-zDNfnTDDd1fMwIFfgfIn3d2k8oQy0AFtiJ5MI2_ph1nGiwTj--BUEqzUpBzgUlnII3Tmc0hteyf5Ewtzf4XR2Rxb8mXFx8Z8UfbKlIoXhcJ0gWPLbIe_m5Wvtemy4LzUMyoX4IIU");
 
-.maptitle {
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
-
-.signupImg{
-  -webkit-filter : invert(.5);
-  filter: invert(.5);
+  background-position-y: -12rem;
 }
