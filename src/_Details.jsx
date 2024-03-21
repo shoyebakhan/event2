@@ -97,3 +97,61 @@ export const navigation = {
     },
   ],
 };
+
+export const categories = [
+  {
+    name: 'Hotels',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg',
+  },
+  {
+    name: 'Gardens',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg',
+  },
+  {
+    name: 'Caterings',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg',
+  },
+  {
+    name: 'Makeup',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg',
+  },
+  {
+    name: 'Fireworks',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg'
+  },
+
+  {
+    name: 'Kirana Stores',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg'
+  },
+
+  {
+    name: 'Lights & Decorations',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg'
+  },
+
+  {
+    name: 'Travellings',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg'
+  },
+
+  {
+    name: 'Cards Printing',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg'
+  },
+
+  {
+    name: 'Sounds',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg'
+  },
+]
