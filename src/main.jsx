@@ -7,7 +7,7 @@ import {ThemeProvider as NextThemesProvider} from "next-themes";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <NextThemesProvider>
+    <NextThemesProvider attribute='class'>
       <App />
     </NextThemesProvider>
   </React.StrictMode>

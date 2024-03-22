@@ -103,57 +103,67 @@ export const navigation = {
 export const categories = [
   {
     name: 'Hotels',
-    href: 'hotelscard',
+    to: 'hotelscard',
     imageSrc:"https://i.postimg.cc/nzQCjFTR/hotels.jpg",
   },
   {
     name: 'Gardens',
-    href: 'gardencards',
+    to: 'gardencard',
     imageSrc:"https://i.postimg.cc/JhNjpPRR/garden.jpg",
   },
   {
     name: 'Caterings',
-    href: '#',
+    to: 'cateringcard',
     imageSrc: "https://i.postimg.cc/76PKwRVZ/catering.jpg",
   },
   {
     name: 'Salon & Parlour',
-    href: '#',
+    to: 'saloncard',
     imageSrc: "https://i.postimg.cc/L8cXdKmj/salon.jpg",
   },
   {
     name: 'Fireworks',
-    href: '#',
+    to: 'fireworkcard',
     imageSrc: "https://i.postimg.cc/KzswVF22/fireworks.jpgx",
   },
 
   {
-    name: 'Kirana Stores',
-    href: '#',
+    name: 'Grocery Stores',
+    to: 'grocerycard',
     imageSrc: "https://i.postimg.cc/xd8WPqwR/grocery.jpg",
   },
 
   {
     name: 'Lights & Decorations',
-    href: '#',
+    to: 'lightcard',
     imageSrc: "https://i.postimg.cc/KvdkbgNK/lights.jpg",
   },
 
   {
     name: 'Car',
-    href: '#',
+    to: 'carcard',
     imageSrc: "https://i.postimg.cc/vTvsNk3L/car.jpg",
   },
 
   {
     name: 'Cards Printing',
-    href: '#',
+    to: 'cardsprintingcard',
     imageSrc: "https://i.postimg.cc/bYSL91sr/cards.jpg",
   },
 
   {
     name: 'Sounds',
-    href: '#',
+    to: 'soundscard',
     imageSrc: "https://i.postimg.cc/vm16wtR6/dj.jpg",
+  },
+  {
+    name: 'Photography',
+    to: 'photographycard',
+    imageSrc: "https://i.postimg.cc/SKP76Mb9/photoshoot.jpg",
+  },
+  {
+    name: 'Mare',
+    to: 'marecard',
+    imageSrc: "https://i.postimg.cc/mZ1RyfC1/mare.png",
   },
 ]
