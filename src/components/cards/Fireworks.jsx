@@ -2,10 +2,10 @@ import React from 'react'
 import { FaStar } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import { TbPhoneCall } from "react-icons/tb";
-import { hotelsObj } from '../../_Details';
+import { fireworksObj } from '../../_Details';
 
 
-export default function Hotels() {
+export default function Fireworks() {
   return (
 
     <>
@@ -13,22 +13,22 @@ export default function Hotels() {
 
         <div className="py-10 px-4 sm:py-16 xl:mx-auto xl:max-w-7xl xl:px-8">
           <div className="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
-            <h2 className="text-2xl font-bold tracking-tight capitalize">Hotels</h2>
+            <h2 className="text-2xl font-bold tracking-tight capitalize">fireworks</h2>
           </div>
 
           <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 lg:max-w-7xl">
-            {hotelsObj.map((hotels) => {
+            {fireworksObj.map((fireworks) => {
               return (
                 <div class="group relative">
                   <div class="aspect-h-1 aspect-w-1 h-80 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
-                    <img className='' src={hotels.image} alt="" />
+                    <img className='' src={fireworks.image} alt="" />
                   </div>
                   <div class="mt-4 flex justify-between">
                     <div>
-                      <h2 className='font-bold text-lg'>{hotels.name}</h2>
-                      <p class="mt-1 text-md"><MdLocationPin className='inline text-xl text-red-700' />{hotels.address}</p>
+                      <h2 className='font-bold text-lg'>{fireworks.name}</h2>
+                      <p class="mt-1 text-md"><MdLocationPin className='inline text-xl text-red-700' />{fireworks.address}</p>
                       <dd className='mt-1 px-1'>
-                        <a className="hover:text-green-700 text-green-900 text-md capitalize" href={`tel:+91${hotels.phone}`}>
+                        <a className="hover:text-green-700 text-green-900 text-md capitalize" href={`tel:+91${fireworks.phone}`}>
                           <TbPhoneCall className='inline text-lg text-green-700' /> call now
                         </a>
                       </dd>

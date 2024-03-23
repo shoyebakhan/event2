@@ -104,12 +104,12 @@ export const categories = [
   {
     name: 'Hotels',
     to: 'hotelscard',
-    imageSrc:"https://i.postimg.cc/nzQCjFTR/hotels.jpg",
+    imageSrc: "https://i.postimg.cc/nzQCjFTR/hotels.jpg",
   },
   {
     name: 'Gardens',
     to: 'gardencard',
-    imageSrc:"https://i.postimg.cc/JhNjpPRR/garden.jpg",
+    imageSrc: "https://i.postimg.cc/JhNjpPRR/garden.jpg",
   },
   {
     name: 'Caterings',
@@ -167,3 +167,351 @@ export const categories = [
     imageSrc: "https://i.postimg.cc/mZ1RyfC1/mare.png",
   },
 ]
+
+export const fireworksObj = [
+  {
+    name: "S.K Fireworks",
+    phone: "8058851259",
+    address: "Phootakot karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Deepak & Tulsi Fireworks",
+    phone: "9166316031",
+    address: "Phootakot karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "B.K. Fireworks",
+    phone: "8058485861",
+    address: "Bhoodara Bazar karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+]
+
+const obj1 = JSON.stringify(fireworksObj)
+console.log(obj1)
+
+export const hotelsObj = [
+  {
+    name: "Hotel Prakash",
+    email: "prakashhotel13@gmail.com",
+    phone: "7231080222 7464250586",
+    address: "Near Govt. College Karauli",
+    price: '',
+    image: '',
+  },
+  {
+    name: "The Karauli Inn",
+    email: "thekarauliinn@gmail.com",
+    phone: "9351627742 9351644255",
+    address: "Masalpur Chungi Karauli",
+    price: '',
+    image: '',
+  },
+  {
+    name: "Hotel Chetan",
+    email: "chetanhotel@gmail.com",
+    phone: "9929028366",
+    address: "Private Bus Stand Hindaun Road Karauli",
+    price: '',
+    image: '',
+  },
+  {
+    name: "Hotel Karauli Ajay",
+    email: '',
+    phone: "9024745555 8209531450",
+    address: "Private Bus Stand Hindaun Road Karauli",
+    price: '',
+    image: '',
+  },
+  {
+    name: "Hotel Krishna",
+    phone: "7464220103 8114407972",
+    address: "Near Roadways Bus Stand Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Hotel Richa Palace",
+    phone: "9413885760",
+    address: "Collectory Road Near Govt. College Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Radha Krishna Guest House",
+    phone: "9694519739 8769589282",
+    address: "Opp. Trilok Chand Mathur Stadium Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Royal Hotel",
+    phone: "7073727144",
+    address: "Opp. Hotel Ajay Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Siddhi Vinayak",
+    phone: "9414272043",
+    address: "Gulab Bagh Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Krishna Hotel In Karauli",
+    phone: "9785756380",
+    address: "Masalpur Chungi, Hindaun Road Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Hotel Raj Palace Karauli",
+    phone: "8005871045",
+    address: "Sikarganj Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Hotel Ras Raj",
+    phone: "9664484445",
+    address: "GSS Colony Vaishali Nagar Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Hotel Gopal",
+    phone: "7023276015",
+    address: "Opp. Govt. College Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+]
+
+const obj2 = JSON.stringify(hotelsObj)
+console.log(obj2)
+
+export const gardensObj = [
+  {
+    name: "Shiv Ashoka",
+    phone: "9784720762",
+    address: "Near Petrol Pump Village Ruggapura Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Shiv Palace",
+    phone: "8005765475",
+    address: "Indira Colony In Front Of Kotwali Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Shree Ji Marriage Garden",
+    phone: "9690871665",
+    address: "Near Mahindra Showroom Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Laxmi Marriage Garden",
+    phone: "9530172496",
+    address: "Near Stadium Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Garg Palace",
+    phone: "9983786964",
+    address: "Hindaun Gate Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Karauli Garden Inn",
+    phone: "8740075371",
+    address: "Gulab Bagh Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Rajrani Palace",
+    phone: "7942688271",
+    address: "GSS Colony, Vaishali Nagar Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Ashirwad Marriage Garden",
+    phone: "7381828282",
+    address: "Vaishali Nagar Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+]
+
+const obj3 = JSON.stringify(gardensObj)
+console.log(obj3)
+
+export const kiranaObj = [
+  {
+    name: "Kallu Traders",
+    phone: "9414727578 9001203540",
+    address: "Old Vegetable Market Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Dinesh Disposals",
+    phone: "9079968341 7877327367",
+    address: "Food Market Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Mukesh Traders",
+    phone: "6350546283",
+    address: "Bada Baazar Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Purushottam Disposals",
+    phone: "8094779373",
+    address: "Food Market Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Ashok Trading Company",
+    phone: "8290440667",
+    address: "Food Market Karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+]
+
+const obj4 = JSON.stringify(kiranaObj)
+console.log(obj4)
+
+export const cardsprintingObj = [
+  {
+    name: "Puspendra Printing Press",
+    phone: "8005599335",
+    address: "Near Santoshi Mata Temple karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Nagina Printing Press",
+    phone: "9829238509",
+    address: "Wazirpur Gate karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Shubham Printing Press",
+    phone: "9460152920",
+    address: "Outside Of Wazirpur Gate karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Ganesh Printers",
+    phone: "8058042145",
+    address: "Collectory Road karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Padam Printers",
+    phone: "9413886872",
+    address: "Wazirpur Gate karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Azad Printing Press",
+    phone: "9785515737",
+    address: "Near PWD. Collectory Circle karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Galaxy Offset",
+    phone: "9414340961",
+    address: "Outside Of Wazirpur Gate karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+]
+
+const obj5 = JSON.stringify(cardsprintingObj)
+console.log(obj5)
+
+export const lightsObj = [
+  {
+    name: "Divya Light & Decoration",
+    phone: "9785385251",
+    address: "Indira Colony In Front Of Kotwali karauli",
+    price: '',
+    image: '',
+    email: '',
+  },
+  {
+    name: "Shivam Light & Decoration",
+    phone: "9649384022",
+    price: '',
+    image: '',
+    email: '',
+    address: '',
+  },
+  {
+    name: "Pachori Light & Decoration",
+    phone: "9982306018",
+    price: '',
+    image: '',
+    email: '',
+    address: '',
+  },
+]
+
+const obj6 = JSON.stringify(lightsObj)
+console.log(obj6)
