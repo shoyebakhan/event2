@@ -515,3 +515,91 @@ export const lightsObj = [
 
 const obj6 = JSON.stringify(lightsObj)
 console.log(obj6)
+
+export const parlourObj = [
+  {
+    name: "pooja beauty parlour",
+    phone: "8107465561",
+    address: "baraf factory , chatikna karauli",
+    price: '',
+    image: '',
+  },
+  {
+    name: "priti beauty parlour",
+    phone: " 9079100735",
+    address: "sita badi karauli",
+    price: ' 1100-2100',
+    image: '',
+  },
+  {
+    name: "vandana beauty parlour",
+    phone: "8209783430",
+    address: "near ganpati palaza sitabadi ,karauli",
+    price: '1100 -5000',
+    image: '',
+  },
+  {
+    name: "payal beauty parlour",
+    instagram:'mansiimakover',
+    phone: "6376103612",
+    address: "sitabadi city mall first floor , karauli ",
+    price: '1000-51000',
+    image: '',
+  },
+  {
+    name: "radhika beauty parlour",
+    phone: "7891836834",
+    address: "sitabadi city mall first floor , karauli",
+    price: '1000-3100',
+    image: '',
+  },
+  {
+    name: "glam studio",
+    phone: "9694718125",
+    address: "in front shivcharan singh dhawai petrol pump , truck union karauli",
+    price: '2000,71000',
+    image: '',
+  }]
+  const obj7 = JSON.stringify(parlourObj)
+console.log(obj7)
+  
+export const womenclothingObj = [
+  {
+    name: "radharani sari showroom",
+    phone: "9309485546 , 9929849035",
+    address: "first and secound floor ganpati plaza , karauli",
+    price: '',
+    image: '',
+  },
+  {
+    name: "riya sarees",
+    phone: "8209625913",
+    address: "ganpati plaza,karauli",
+    price: '3000-45000',
+    image: '',
+  },
+  {
+    name: "gomti sares",
+    phone: "7737990667",
+    address: "agarsen katla bhure valo ki gali, karauli",
+    price: '2500-50000',
+    image: '',
+  },
+  {
+    name: "mangalam showroom",
+    phone: "9875242147",
+    address: "agarsen katla bhure valo ki gali, karauli",
+    price: '3500-35000',
+    image: '',
+  },
+  {
+    name: "panihari vesh collection",
+    phone: "8058116947",
+    address: "city mall ,karauli",
+    price: '2000-40000',
+    image: '',
+  },
+  ]
+  const obj8 = JSON.stringify(womenclothingObj)
+console.log(obj8)
+  
